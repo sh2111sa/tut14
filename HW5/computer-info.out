@@ -1,0 +1,20 @@
+cn092
+ 10:55:39 up 15 days, 18:24,  0 users,  load average: 20.93, 21.79, 23.32
+Filesystem             Size  Used Avail Use% Mounted on
+devtmpfs               4.0M     0  4.0M   0% /dev
+tmpfs                  126G   50M  126G   1% /dev/shm
+tmpfs                   51G   28M   51G   1% /run
+/dev/nvme0n1p3          63G  6.0G   54G  11% /
+/dev/nvme0n1p2         974M  309M  598M  35% /boot
+/dev/nvme0n1p5         125G  1.9G  117G   2% /var
+/dev/nvme0n1p1         599M  7.0M  592M   2% /boot/efi
+/dev/nvme0n1p6         1.6T  1.1G  1.5T   1% /local
+cobbler:/share/common  261G  220G   28G  90% /share/nfs-cobbler
+aurora2:/fast/sw       5.2T  4.4T  599G  89% /sw_aurora2
+cosmos-sw:/sw          7.0T  1.1T  5.6T  17% /sw
+home                   257T   37T  220T  15% /home
+lunarc                 2.4P  1.3P  1.2P  51% /lunarc
+fs12-hep.int:/disk     568T   15T  553T   3% /projects/hep/fs12
+fs8-hep.int:/disk      350T   69T  282T  20% /projects/hep/fs8
+Number of entries in /etc directory: 272
+Number of entries in /usr/bin directory: 1672

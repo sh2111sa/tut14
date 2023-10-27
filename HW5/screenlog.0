@@ -1,0 +1,631 @@
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ exitcd ..sbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksbatch shilpa_homework5_solution.sh
+[?2004lSubmitted batch job 105615
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ sbatch shilpa_homework5_solution.sh
+[?2004lSubmitted batch job 105616
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ sbatch shilpa_homework5_solution.sh
+[?2004lSubmitted batch job 105617
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ sbatch shilpa_homework5_solution.sh
+[?2004lSubmitted batch job 105618
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ squeue
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+             99540   gpua100 SO137_11     hlhh  R 3-02:00:27      1 cg09
+             99537   gpua100 SO137_11     hlhh  R 3-02:05:39      1 cg08
+            105543   gpua100 interact singh96a  R    2:50:12      1 cg11
+            104863   gpua100 run_job.   najmeh  R   17:53:22      2 cg[07,10]
+            104846    gpua40     lhpc   julhan  R   18:16:51      1 cg02
+            105536    gpua40     lhpc gu6568gr  R    2:57:11      1 cg01
+            105542    gpua40 interact singh96a  R    2:50:23      1 cg01
+            104666    gpua40 run_job.   najmeh  R   12:33:51      2 cg[05-06]
+            104661    gpua40 run_job.   najmeh  R   18:35:49      2 cg[03-04]
+            104577       hep NNBAR_M_    scyiu  R       0:42      1 cx05
+            102274      lu32 fe-champ     iria  R 1-12:37:18      1 cn198
+            105372      lu32 run.auro     vivy  R   14:22:41     19 cn[197,199-216]
+            100292      lu32   run.py     vivy  R 3-23:49:06      1 cn217
+            100284      lu32   run.py     vivy  R 3-23:53:11      1 cn196
+            105556      lu32 _interac     vivy  R    1:33:27      1 cn198
+            102221      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            101744      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            101742      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            101740      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            101334      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            100818      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            100585      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            100443      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+            100329      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             98358      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             96913      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             94594      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             93448      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             93384      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             92969      lu48 guess_ap anne1212 PD       0:00      1 (DependencyNeverSatisfied)
+             91141      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69506      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69504      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             69184      lu48 guess_ap ad3021gu PD       0:00      1 (DependencyNeverSatisfied)
+             94532      lu48 PCPS_3_M  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             94533      lu48 PCPS_4_M  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             94534      lu48 PCPS_5_M  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             99802      lu48 c7LUtzA- maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99804      lu48 c7LWHtzA maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99803      lu48 c7LWUtzA maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99805      lu48 c7LWHtzA maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99806      lu48 c7LMtzAH maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99808      lu48 6L5tzbAH maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99809      lu48 c6L5tzAH maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99810      lu48   1LA-tz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99811      lu48 c2DLAHtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99812      lu48 c2LbtzNA maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+             99874      lu48 PCPS_H_1  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             99875      lu48 PCPS_H_2  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             99876      lu48 PCPS_H_3  amandae PD       0:00      8 (AssocGrpCpuLimit)
+             99877      lu48 PCPS_H_5  amandae PD       0:00      8 (AssocGrpCpuLimit)
+            100418      lu48   Hst5HS    osven PD       0:00      8 (AssocGrpCpuLimit)
+            100419      lu48   Hst5HS    osven PD       0:00      8 (AssocGrpCpuLimit)
+            100420      lu48   Hst5HS    osven PD       0:00      8 (AssocGrpCpuLimit)
+            100421      lu48   Hst5HS    osven PD       0:00      8 (AssocGrpCpuLimit)
+            100422      lu48   Hst5HS    osven PD       0:00      8 (AssocGrpCpuLimit)
+            100205      lu48  1LAHbtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            100210      lu48 2HLAHbtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            100226      lu48 c2HLAHtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            100233      lu48  6L9tzA- maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            100244      lu48  6L5A-tz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            100246      lu48  6L9tzAH maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            102472      lu48 c12LAHtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            102473      lu48 c7LMtzA- maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            102474      lu48 c9LtzbAH maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            102475      lu48  2DLA-tz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            102476      lu48 2DLAHbtz maryam42 PD       0:00      1 (AssocGrpCpuLimit)
+            105566      lu48 runMaste nat12nho PD       0:00      5 (Resources)
+            105567      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105568      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105570      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105569      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105571      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105572      lu48 runMaste nat12nho PD       0:00      5 (Priority)
+            105618      lu48 computer shilpa05  R       0:15      1 cn092
+            105617      lu48 computer shilpa05  R       0:18      1 cn092
+            105616      lu48 computer shilpa05  R       0:21      1 cn063
+            105615      lu48 computer shilpa05  R       1:39      1 cn038
+            105614      lu48 computer shilpa05  R       2:08      1 cn038
+            102410      lu48 run_sing   eielen  R 1-09:14:57      1 cn098
+            102411      lu48 run_sing   eielen  R 1-09:14:57      1 cn098
+            102408      lu48 run_sing   eielen  R 1-09:15:00      1 cn098
+            102409      lu48 run_sing   eielen  R 1-09:15:00      1 cn098
+            104864      lu48  sphmerg amarklun  R   17:49:06      1 cn009
+            105507      lu48 Run_admi  eelhaik  R   10:14:55      5 cn[112,131,178-180]
+            105581      lu48 interact hongxiao  R      18:45      1 cn038
+            105051      lu48 MV_patsp  leachri  R   15:24:44      1 cn055
+            105601      lu48 _interac anne1212  R      11:07      1 cn038
+            102453      lu48     Run2 himani65  R   20:48:22     16 cn[017-021,023,025,027,029-030,086,135,137,146-148]
+            100666      lu48 Incap_A1   friale  R 3-01:20:37      1 cn158
+            105508      lu48 HaloFind  anatole  R   10:01:45      1 cn033
+            104743      lu48  acharya pacharya  R   18:33:31      1 cn085
+            104742      lu48  acharya pacharya  R   18:33:36      1 cn038
+            105371      lu48 pr_l3ang  zakiyeh  R   14:24:42      1 cn002
+            105370      lu48 pr_l3ang  zakiyeh  R   14:25:15      1 cn038
+            105369      lu48 pr_l3ang  zakiyeh  R   14:25:49      1 cn038
+            105363      lu48 pr_l3ang  zakiyeh  R   14:53:56      1 cn090
+            105362      lu48 pr_l3ang  zakiyeh  R   14:54:32      1 cn090
+            105361      lu48 pr_l3ang  zakiyeh  R   14:55:05      1 cn039
+            105619      lu48 viscE3_m   trulle  R       0:04      1 cn002
+            105613      lu48 viscE3_m   trulle  R       3:36      1 cn002
+            105612      lu48 viscE3_m   trulle  R       5:16      1 cn002
+            105611      lu48 viscE3_m   trulle  R       6:01      1 cn002
+            105610      lu48 viscE3_m   trulle  R       6:40      1 cn002
+            105608      lu48 viscE3_m   trulle  R       7:08      1 cn002
+            105604      lu48 viscE3_m   trulle  R       7:39      1 cn002
+            105603      lu48 viscE3_m   trulle  R       9:37      1 cn002
+            105602      lu48 viscE3_m   trulle  R      10:21      1 cn002
+            105592      lu48 viscE3_m   trulle  R      12:05      1 cn002
+            105590      lu48 viscE3_m   trulle  R      13:10      1 cn002
+            105580      lu48 Attr500_   trulle  R      23:23      1 cn002
+            105609      lu48 pr_l3ang  zakiyeh  R       7:06      1 cn002
+            105607      lu48 pr_l3ang  zakiyeh  R       7:11      1 cn002
+            105606      lu48 pr_l3ang  zakiyeh  R       7:17      1 cn002
+            105600      lu48 pr_l3ang  zakiyeh  R      11:41      1 cn002
+            105599      lu48 pr_l3ang  zakiyeh  R      11:45      1 cn002
+            105598      lu48 pr_l3ang  zakiyeh  R      11:47      1 cn002
+            105595      lu48 pr_l3ang  zakiyeh  R      11:48      1 cn002
+            105596      lu48 pr_l3ang  zakiyeh  R      11:48      1 cn002
+            105597      lu48 pr_l3ang  zakiyeh  R      11:48      1 cn002
+            100766      lu48 viscE3_m   trulle  R 3-00:12:00      1 cn038
+            100754      lu48 viscE3_m   trulle  R 3-00:20:01      1 cn038
+            100716      lu48 viscE3_m   trulle  R 3-01:20:37      1 cn167
+            100715      lu48 viscE3_m   trulle  R 3-01:22:10      1 cn167
+            100481      lu48 viscE3_m   trulle  R 3-19:52:20      1 cn038
+            100477      lu48 viscE3_m   trulle  R 3-19:56:20      1 cn038
+            100471      lu48 viscE3_m   trulle  R 3-20:00:21      1 cn002
+            100291      lu48 viscE3_m   trulle  R 3-23:48:49      1 cn002
+            100285      lu48 viscE3_m   trulle  R 3-23:50:49      1 cn002
+            100289      lu48 viscE3_m   trulle  R 3-23:50:49      1 cn002
+            100290      lu48 viscE3_m   trulle  R 3-23:50:49      1 cn002
+            100282      lu48 viscE3_m   trulle  R 3-23:52:49      1 cn002
+            100283      lu48 viscE3_m   trulle  R 3-23:52:49      1 cn002
+            105230      lu48 ../lnp_2 gtesei00  R   15:40:54      1 cn040
+            105231      lu48 ../lnp_2 gtesei00  R   15:40:54      1 cn040
+            105232      lu48 ../lnp_2 gtesei00  R   15:40:54      1 cn040
+            105237      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn040
+            105238      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn081
+            105239      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn085
+            105244      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn072
+            105245      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn072
+            105246      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn072
+            105251      lu48 ../lnp_2 gtesei00  R   15:40:54      1 cn072
+            105252      lu48 ../lnp_2 gtesei00  R   15:40:54      1 cn072
+            105258      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn072
+            105259      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn001
+            105265      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn001
+            105266      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn005
+            105272      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn005
+            105273      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn005
+            105274      lu48 ../lnp_e gtesei00  R   15:40:54      1 cn005
+            105139      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105140      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105141      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105142      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105143      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105144      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105145      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105146      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn024
+            105147      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn041
+            105148      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn092
+            105149      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105150      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105151      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105152      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105153      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105154      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105155      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105156      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105157      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105158      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105159      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105160      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105161      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105162      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn090
+            105163      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn032
+            105164      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn032
+            105165      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn032
+            105166      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn032
+            105167      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn032
+            105168      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105169      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105170      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105171      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105172      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105173      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105174      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105175      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105176      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105177      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105178      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105179      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105180      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105181      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105182      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105183      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105184      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105185      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105186      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105187      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105188      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105189      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105190      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105191      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105192      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105193      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105194      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105195      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105196      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105197      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105198      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105199      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105200      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105201      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105202      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105203      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105204      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105205      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105206      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105207      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105208      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105209      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105210      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105211      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn098
+            105212      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105213      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105214      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105215      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105216      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105217      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105218      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105219      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105220      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105221      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn056
+            105222      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105223      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105224      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105225      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105226      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105227      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105228      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105229      lu48 ../lnp_e gtesei00  R   15:48:54      1 cn040
+            105052      lu48 ../lnp_3 gtesei00  R   16:02:55      1 cn087
+            105053      lu48 ../lnp_3 gtesei00  R   16:02:55      1 cn087
+            105054      lu48 ../lnp_3 gtesei00  R   16:02:55      1 cn087
+            105059      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn087
+            105060      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn087
+            105061      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn087
+            105066      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn087
+            105067      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn087
+            105073      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105074      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105080      lu48 ../lnp_3 gtesei00  R   16:02:55      1 cn092
+            105081      lu48 ../lnp_3 gtesei00  R   16:02:55      1 cn092
+            105087      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105088      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105094      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105101      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn092
+            105108      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn116
+            105109      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn116
+            105115      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn116
+            105116      lu48 ../lnp_e gtesei00  R   16:02:55      1 cn116
+            105029      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn167
+            105030      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105031      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105032      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105033      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105034      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105035      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn039
+            105036      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105037      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105038      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105039      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105040      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105041      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105042      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105043      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn041
+            105044      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn090
+            105045      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn090
+            105046      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn087
+            105047      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn087
+            105048      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn087
+            105049      lu48 ../lnp_e gtesei00  R   16:04:55      1 cn087
+            104988      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104989      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104990      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104991      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104992      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104993      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104994      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104995      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104996      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104997      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104998      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            104999      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105000      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105001      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105002      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105003      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105004      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105005      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105006      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn014
+            105007      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105009      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105010      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105011      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105012      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105013      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn038
+            105014      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105015      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105016      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105018      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105019      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105020      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105021      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105022      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105023      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105024      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105025      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105026      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105027      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105028      lu48 ../lnp_e gtesei00  R   16:06:55      1 cn167
+            105544      lu48   pl_opt gu6568gr  R    2:32:32      2 cn[142,155]
+            105377      lu48  C-6-red     iria  R   12:46:12      1 cn154
+            105376      lu48 C-6-quar     iria  R   12:46:15      1 cn092
+            100797      lu48    qprod     iria  R 2-23:21:58      1 cn003
+            100993      lu48  C-3-red     iria  R 2-20:35:36      1 cn092
+            101030      lu48 C-4-red-     iria  R 2-20:21:35      1 cn063
+            100996      lu48 C-4-doub     iria  R 2-20:35:36      1 cn063
+             98300      lu48 fe-3-cha     iria  R 6-22:35:09      1 cn154
+            105574      lu48 testRunf   august  R      36:29      1 cn024
+            101752      lu48  f60halo   agertz  R 1-18:14:34      2 cn[141,143]
+             98368      lu48     wsub      jan  R 6-21:29:08      1 cn127
+             98360      lu48     wsub      jan  R 6-21:31:08      1 cn024
+             98361      lu48     wsub      jan  R 6-21:31:08      1 cn024
+             98362      lu48     wsub      jan  R 6-21:31:08      1 cn024
+             98363      lu48     wsub      jan  R 6-21:31:08      1 cn024
+             98364      lu48     wsub      jan  R 6-21:31:08      1 cn024
+             98365      lu48     wsub      jan  R 6-21:31:08      1 cn072
+             98366      lu48     wsub      jan  R 6-21:31:08      1 cn072
+             98367      lu48     wsub      jan  R 6-21:31:08      1 cn072
+             97834      lu48     zub4      jan  R 5-07:22:24      1 cn014
+            101757      lu48      sub      jan  R 2-03:52:33      1 cn040
+            101758      lu48   subbb1      jan  R 2-03:52:33      1 cn040
+            101759      lu48   subbb2      jan  R 2-03:52:33      1 cn040
+            101760      lu48   subbb3      jan  R 2-03:52:33      1 cn072
+            101768      lu48     subb      jan  R 2-02:34:30      1 cn072
+            101762      lu48     subb      jan  R 2-03:46:33      1 cn072
+            101761      lu48   subbb4      jan  R 2-03:52:33      1 cn072
+            101044      lu48      zub      jan  R 2-19:49:23      1 cn002
+            101088      lu48   subbb1      jan  R 2-19:21:20      1 cn003
+            101089      lu48   subbb2      jan  R 2-19:21:20      1 cn003
+            101090      lu48   subbb3      jan  R 2-19:21:20      1 cn003
+            101092      lu48   subbb4      jan  R 2-19:21:20      1 cn003
+            101076      lu48     subb      jan  R 2-19:31:21      1 cn072
+            101104      lu48      bub      jan  R 2-19:13:19      1 cn014
+            101105      lu48     bub1      jan  R 2-19:13:19      1 cn032
+            101106      lu48     bub2      jan  R 2-19:13:19      1 cn032
+            101107      lu48     bub3      jan  R 2-19:13:19      1 cn032
+            101108      lu48     bub4      jan  R 2-19:13:19      1 cn032
+            101111      lu48      bub      jan  R 2-19:13:19      1 cn032
+            101112      lu48     bub1      jan  R 2-19:13:19      1 cn119
+            101113      lu48     bub2      jan  R 2-19:13:19      1 cn128
+            101114      lu48     bub3      jan  R 2-19:13:19      1 cn132
+            101115      lu48     bub4      jan  R 2-19:13:19      1 cn117
+            101087      lu48      sub      jan  R 2-19:23:20      1 cn038
+            101077      lu48    subb1      jan  R 2-19:31:21      1 cn127
+            101078      lu48    subb2      jan  R 2-19:31:21      1 cn127
+            101079      lu48    subb3      jan  R 2-19:31:21      1 cn127
+            101080      lu48    subb4      jan  R 2-19:31:21      1 cn127
+            101081      lu48     subb      jan  R 2-19:31:21      1 cn127
+            101082      lu48    subb1      jan  R 2-19:31:21      1 cn127
+            101083      lu48    subb2      jan  R 2-19:31:21      1 cn150
+            101084      lu48    subb3      jan  R 2-19:31:21      1 cn150
+            101085      lu48    subb4      jan  R 2-19:31:21      1 cn024
+            101055      lu48      zub      jan  R 2-19:45:23      1 cn040
+            101056      lu48      zub      jan  R 2-19:45:23      1 cn040
+            101057      lu48      zub      jan  R 2-19:45:23      1 cn072
+            101058      lu48      zub      jan  R 2-19:45:23      1 cn072
+            101059      lu48      zub      jan  R 2-19:45:23      1 cn072
+            101050      lu48      zub      jan  R 2-19:47:23      1 cn002
+            101051      lu48      zub      jan  R 2-19:47:23      1 cn002
+            101052      lu48      zub      jan  R 2-19:47:23      1 cn002
+            101053      lu48      zub      jan  R 2-19:47:23      1 cn002
+            105578      lu48     half filipsjo  R      25:12      1 cn024
+            101963      lu48     wsub      jan  R 1-20:11:58      1 cn136
+            101964      lu48     wsub      jan  R 1-20:11:58      1 cn136
+            101878      lu48     zubb      jan  R 1-21:42:09      1 cn040
+            101953      lu48     wsub      jan  R 1-20:13:59      1 cn072
+            101954      lu48     wsub      jan  R 1-20:13:59      1 cn072
+            101949      lu48     wsub      jan  R 1-20:20:03      1 cn072
+            101950      lu48     wsub      jan  R 1-20:20:03      1 cn072
+            101942      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101943      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101944      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101945      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101946      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101947      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101948      lu48     wsub      jan  R 1-20:22:03      1 cn072
+            101938      lu48     wsub      jan  R 1-20:24:03      1 cn014
+            101939      lu48     wsub      jan  R 1-20:24:03      1 cn014
+            101940      lu48     wsub      jan  R 1-20:24:03      1 cn014
+            101941      lu48     wsub      jan  R 1-20:24:03      1 cn014
+            101935      lu48     wsub      jan  R 1-20:26:03      1 cn014
+            101937      lu48     wsub      jan  R 1-20:26:03      1 cn014
+            101932      lu48     wsub      jan  R 1-20:26:04      1 cn014
+            101933      lu48     wsub      jan  R 1-20:26:04      1 cn014
+            101934      lu48     wsub      jan  R 1-20:26:04      1 cn014
+            101918      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101919      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101920      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101921      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101922      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101923      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101924      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101925      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101926      lu48     wsub      jan  R 1-20:34:04      1 cn014
+            101902      lu48     wsub      jan  R 1-20:56:06      1 cn072
+            101903      lu48     wsub      jan  R 1-20:56:06      1 cn072
+            101904      lu48     wsub      jan  R 1-20:56:06      1 cn072
+            101905      lu48     wsub      jan  R 1-20:56:06      1 cn072
+            101897      lu48     wsub      jan  R 1-20:58:06      1 cn072
+            101898      lu48     wsub      jan  R 1-20:58:06      1 cn072
+            101899      lu48     wsub      jan  R 1-20:58:06      1 cn072
+            101900      lu48     wsub      jan  R 1-20:58:06      1 cn072
+            101901      lu48     wsub      jan  R 1-20:58:06      1 cn072
+            101885      lu48      zub      jan  R 1-21:28:09      1 cn040
+            101884      lu48      zub      jan  R 1-21:30:09      1 cn040
+            101882      lu48     zubb      jan  R 1-21:42:09      1 cn040
+            101874      lu48     zubb      jan  R 1-21:44:10      1 cn040
+            101875      lu48     zubb      jan  R 1-21:44:10      1 cn040
+             99951      lu48      sub      jan  R 4-02:52:23      1 cn014
+            100343      lu48     zub4      jan  R 3-22:56:46      1 cn002
+            100369      lu48      zub      jan  R 3-22:46:46      1 cn038
+            100370      lu48     zub1      jan  R 3-22:46:46      1 cn038
+            100372      lu48     zub2      jan  R 3-22:46:46      1 cn038
+            100374      lu48     zub3      jan  R 3-22:46:46      1 cn038
+            100375      lu48     zub4      jan  R 3-22:46:46      1 cn038
+            100360      lu48      zub      jan  R 3-22:48:46      1 cn150
+            100361      lu48     zub1      jan  R 3-22:48:46      1 cn150
+            100362      lu48     zub2      jan  R 3-22:48:46      1 cn150
+            100363      lu48     zub3      jan  R 3-22:48:46      1 cn150
+            100364      lu48     zub4      jan  R 3-22:48:46      1 cn150
+            100351      lu48      zub      jan  R 3-22:52:46      1 cn002
+            100352      lu48     zub1      jan  R 3-22:52:46      1 cn002
+            100353      lu48     zub2      jan  R 3-22:52:46      1 cn002
+            100354      lu48     zub3      jan  R 3-22:52:46      1 cn002
+            100355      lu48     zub4      jan  R 3-22:52:46      1 cn127
+            100338      lu48      zub      jan  R 3-22:58:47      1 cn002
+            100340      lu48     zub1      jan  R 3-22:58:47      1 cn002
+            100341      lu48     zub2      jan  R 3-22:58:47      1 cn002
+            100342      lu48     zub3      jan  R 3-22:58:47      1 cn002
+            100334      lu48     wsub      jan  R 3-23:18:48      1 cn167
+            100006      lu48      sub      jan  R 4-01:00:56      1 cn024
+            100007      lu48    subb1      jan  R 4-01:00:56      1 cn024
+            100008      lu48    subb2      jan  R 4-01:00:56      1 cn024
+            100009      lu48    subb3      jan  R 4-01:00:56      1 cn024
+            100010      lu48    subb4      jan  R 4-01:00:56      1 cn024
+            100001      lu48      sub      jan  R 4-01:04:56      1 cn024
+            100002      lu48    subb1      jan  R 4-01:04:56      1 cn024
+            100003      lu48    subb2      jan  R 4-01:04:56      1 cn024
+            100004      lu48    subb3      jan  R 4-01:04:56      1 cn024
+            100005      lu48    subb4      jan  R 4-01:04:56      1 cn024
+             99993      lu48      sub      jan  R 4-01:14:56      1 cn014
+             99994      lu48    subb1      jan  R 4-01:14:56      1 cn024
+             99995      lu48    subb2      jan  R 4-01:14:56      1 cn024
+             99996      lu48    subb3      jan  R 4-01:14:56      1 cn024
+             99997      lu48    subb4      jan  R 4-01:14:56      1 cn024
+            101995      lu48      C-8     iria  R 1-18:47:55      1 cn063
+            101996      lu48 C-8-red-     iria  R 1-18:47:55      1 cn140
+            100696      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100727      lu48     wsub      jan  R 3-01:04:08      1 cn040
+            100728      lu48     wsub      jan  R 3-01:04:08      1 cn040
+            100725      lu48     wsub      jan  R 3-01:07:45      1 cn040
+            100724      lu48     wsub      jan  R 3-01:07:57      1 cn024
+            100723      lu48     wsub      jan  R 3-01:08:17      1 cn024
+            100722      lu48     wsub      jan  R 3-01:08:47      1 cn024
+            100721      lu48     wsub      jan  R 3-01:09:01      1 cn024
+            100720      lu48     wsub      jan  R 3-01:11:32      1 cn024
+            100719      lu48     wsub      jan  R 3-01:11:58      1 cn024
+            100702      lu48     wsub      jan  R 3-01:30:10      1 cn024
+            100703      lu48     wsub      jan  R 3-01:30:10      1 cn024
+            100704      lu48     wsub      jan  R 3-01:30:10      1 cn024
+            100697      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100698      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100699      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100700      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100701      lu48     wsub      jan  R 3-01:32:10      1 cn024
+            100676      lu48      sub      jan  R 3-01:58:11      1 cn040
+            105541      lu48      bub      jan  R    2:50:41      1 cn040
+            104740      lu48      sub      jan  R   18:45:04      1 cn040
+            104722      lu48      sub      jan  R   18:47:05      1 cn040
+            104931      lu48     wsub      jan  R   16:54:11      1 cn040
+            104929      lu48     wsub      jan  R   16:55:12      1 cn040
+            104928      lu48     wsub      jan  R   16:56:24      1 cn040
+            104923      lu48     wsub      jan  R   16:57:27      1 cn040
+            104922      lu48     wsub      jan  R   16:59:01      1 cn040
+            104921      lu48     wsub      jan  R   17:00:24      1 cn040
+            104920      lu48     wsub      jan  R   17:01:40      1 cn040
+            104919      lu48     wsub      jan  R   17:05:30      1 cn040
+            104918      lu48     wsub      jan  R   17:06:26      1 cn040
+            104916      lu48     wsub      jan  R   17:08:46      1 cn040
+            104914      lu48     wsub      jan  R   17:11:48      1 cn040
+            104913      lu48     wsub      jan  R   17:12:26      1 cn040
+            104895      lu48     wsub      jan  R   17:16:05      1 cn040
+            101650      lu48 FLUOR-ru     iria  R 2-12:58:49      1 cn161
+            101868      lu48 ti-4-Cp-     iria  R 1-22:38:12      1 cn081
+            101573      lu48    qprod     iria  R 2-14:10:55      1 cn081
+            101561      lu48    qprod     iria  R 2-14:11:39      1 cn081
+            101433      lu48    qprod     iria  R 2-15:53:41      1 cn124
+            101225      lu48    qprod     iria  R 2-17:25:42      1 cn001
+            101212      lu48    qprod     iria  R 2-17:50:37      1 cn125
+             95939      lu48 pD-p53-1   mb1995  R 2-15:11:19      4 cn[068,070,080,105]
+             95938      lu48     pD-5   mb1995  R 2-17:04:23      4 cn[010-011,013,053]
+             95937      lu48     pD-4   mb1995  R 2-18:52:00      4 cn[064-065,067,074]
+             95934      lu48     pD-1   mb1995  R 2-15:11:19      4 cn[106,149,171,174]
+             94005      lu48 c11LtzbA maryam42  R 6-18:22:21      1 cn035
+             94531      lu48 PCPS_2_M  amandae  R 6-00:14:10      8 cn[089,091,097,099-100,102-104]
+             94438      lu48 PCPS_1_M  amandae  R 6-02:20:17      8 cn[160,162-166,169-170]
+             99801      lu48 7LUbtzA- maryam42  R    4:14:18      1 cn071
+             99800      lu48 8LDbtzA- maryam42  R   12:05:52      1 cn152
+             99799      lu48 11LA-tzb maryam42  R   15:11:21      1 cn107
+             95020      lu48    8LEAH maryam42  R 6-02:25:15      1 cn094
+             95022      lu48  12IA-tz maryam42  R 6-02:25:15      1 cn028
+             95024      lu48 2LbtzNAH maryam42  R 6-02:25:15      1 cn036
+             95019      lu48 c11LtzbA maryam42  R 6-03:28:25      1 cn007
+             99322      lu48 Hst3HSPS    osven  R 2-13:17:59      8 cn[048,057-062,093]
+             99321      lu48 Hst3HSPS    osven  R 2-18:52:00      8 cn[075-078,130,144-145,153]
+             97028      lu48 7LWUbtzA maryam42  R 5-17:01:07      1 cn066
+             97027      lu48 7LWHbtzA maryam42  R 5-20:21:11      1 cn079
+             97026      lu48 7LWbtzHA maryam42  R 5-22:24:04      1 cn006
+             97025      lu48 2LbtzNA- maryam42  R 6-02:25:15      1 cn069
+             99797      lu48 11LtzbAH maryam42  R 2-18:52:00      1 cn168
+            100563      lu48 runConve     lila  R 2-08:27:46      1 cn008
+            100558      lu48 runConve     lila  R 2-12:08:50      1 cn156
+            100562      lu48 runConve     lila  R 2-12:08:50      1 cn157
+            100557      lu48 runConve     lila  R 2-14:36:55      1 cn085
+            100556      lu48 runConve     lila  R 2-17:29:08      1 cn005
+            100553      lu48 runConve     lila  R 2-17:37:09      1 cn012
+            100555      lu48 runConve     lila  R 2-17:37:09      1 cn041
+            100552      lu48 runConve     lila  R 2-18:21:16      1 cn116
+            100550      lu48 runConve     lila  R 2-19:01:18      1 cn032
+            100561      lu48        a iranimeh  R 2-07:02:39      1 cn051
+             99142      lu48  c1LAHtz maryam42  R 4-23:25:18      1 cn037
+             99140      lu48 2HLA-btz maryam42  R 5-01:17:54      1 cn034
+             99141      lu48 c2HLA-tz maryam42  R 5-01:43:24      1 cn173
+             99138      lu48 7LMtzbAH maryam42  R 5-02:44:23      1 cn073
+             99139      lu48 7LMtzbA- maryam42  R 5-02:44:23      1 cn083
+            100549      lu48 runConve     lila  R 3-08:04:32      1 cn140
+          100763_6      lu48 freqsin_ mkoushik  R 2-17:25:08      1 cn001
+            101845      lu48 MMD_step ke2238or  R 1-14:21:45      1 cn151
+          100763_5      lu48 freqsin_ mkoushik  R 2-17:33:08      1 cn167
+             95640      lu48 runConve     lila  R 5-07:22:24      1 cn063
+            100523      lu48 runConve     lila  R 3-17:41:46      1 cn056
+            100531      lu48 runConve     lila  R 3-17:39:46      1 cn039
+             99795      lu48  9LtzbA- maryam42  R 4-05:59:03      1 cn159
+             99794      lu48  9LtzbAH maryam42  R 4-06:05:04      1 cn088
+          100763_1      lu48 freqsin_ mkoushik  R 3-00:12:00      1 cn136
+            105552      lu48 run.cosm     vivy  R    1:38:16     14 cn[015,022,026,101,108-111,115,118,129,176,181-182]
+            105565      lu48 runMaste nat12nho  R      48:28      5 cn[004,082,084,138-139]
+            104701      lu48   pD-2-c   mb1995  R   16:45:22      4 cn[120,123,133-134]
+            105379      lu48 MD_DFT_Q mverissi  R   12:44:39      3 cn[042,096,126]
+             99302      lu48 batch_co    marie  R 5-18:04:41      4 cn[047,049-050,052]
+             99300      lu48 sheperin    marie  R 5-18:16:08      4 cn[043-046]
+             99299      lu48 sheperin    marie  R 5-18:25:17      4 cn[113-114,121-122]
+            105495      lu48 Meta_QR_ mverissi  R   11:49:50      2 cn[167,177]
+            103406      lu48 Meta_DC3 mverissi  R   22:07:15      1 cn125
+            105502      lu48 Meta_uwa mverissi  R   10:46:00      1 cn125
+            105560      lu48 Tf2_1.60     erna  R    1:31:04      1 cn177
+            105559      lu48 Tf2_1.60     erna  R    1:31:24      1 cn177
+            105558      lu48 Tf2_1.60     erna  R    1:31:47      1 cn177
+            105557      lu48 Tf2_3.00     erna  R    1:33:11      1 cn167
+            105553      lu48 Tf2_1.60     erna  R    1:34:23      1 cn167
+            105547      lu48  HIE1.05     erna  R    1:54:58      1 cn167
+             99301      lu48 sheperin    marie  R 5-18:10:49      2 cn[016,031]
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ squeue -u shilpa
+[?2004lsqueue: error: Invalid user: shilpa
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ squeue -u shilpa[Kbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqueue[K -u shilpa[Ksqueue -u shilpa[Kbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcd ..sbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kscreen –d[5Pexitsbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[K[1Pexitsbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cqueue[K -u shilpa050
+[?2004l             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            105618      lu48 computer shilpa05  R       1:08      1 cn092
+            105617      lu48 computer shilpa05  R       1:11      1 cn092
+            105616      lu48 computer shilpa05  R       1:14      1 cn063
+            105615      lu48 computer shilpa05  R       2:32      1 cn038
+            105614      lu48 computer shilpa05  R       3:01      1 cn038
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ scontrol show job <job_id>[K[K[K[K[K[K[K[K105618
+[?2004lJobId=105618 JobName=computer-info-job
+   UserId=shilpa050(32218) GroupId=mnxb11(32200) MCS_label=N/A
+   Priority=67945 Nice=0 Account=lu2023-7-4 QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:01:57 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2023-10-27T10:55:36 EligibleTime=2023-10-27T10:55:36
+   AccrueTime=2023-10-27T10:55:36
+   StartTime=2023-10-27T10:55:39 EndTime=2023-10-27T11:05:39 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2023-10-27T10:55:39 Scheduler=Main
+   Partition=lu48 AllocNode:Sid=cosmos3:3798186
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cn092
+   BatchHost=cn092
+   NumNodes=1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=1,mem=5300M,node=1,billing=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=5300M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/shilpa050/git/HW5/shilpa_homework5_solution.sh
+   WorkDir=/home/shilpa050/git/HW5
+   StdErr=/home/shilpa050/git/HW5/computer-info.err
+   StdIn=/dev/null
+   StdOut=/home/shilpa050/git/HW5/computer-info.out
+   Power=
+   
+
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ scontrol show job 105618[5Pqueue -u shilpa050[K[Kbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcd ..sbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksbatch shilpa_homework5_solution.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kscreen –d-list[8Pexitti./main[2Pmakeexit[K[K[K[Kscontrol show job <job_id>[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscancel 105618
+[?2004lkshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ sacct -u your-username -S YYYY-MM-DD -E YYYY-MM-DD[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@h[1@i[1@l[1@p[1@a[1@0[1@5[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@2[1@0[1@2[1@3[1@-[1@1[1@0[1@-[1@0[1P[1@1[1@6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K2023-10-18
+[?2004lJobID           JobName  Partition    Account  AllocCPUS      State ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+kshilpa050@cosmos3:~/git/HW5\[?2004h[shilpa050@cosmos3 HW5]$ exit
+[?2004lexit
